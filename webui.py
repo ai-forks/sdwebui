@@ -78,7 +78,7 @@ def webui():
 
         app, local_url, share_url = shared.demo.launch(
             share=cmd_opts.share,
-            server_name=initialize_util.gradio_server_name(),
+            server_name="0.0.0.0", #initialize_util.gradio_server_name(),
             server_port=cmd_opts.port,
             ssl_keyfile=cmd_opts.tls_keyfile,
             ssl_certfile=cmd_opts.tls_certfile,
